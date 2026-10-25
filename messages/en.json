@@ -3,10 +3,16 @@
     "title": "Berox | Websites, Web Apps and Mobile Apps",
     "description": "Berox builds fast websites, web apps and Flutter mobile apps for businesses in Egypt and worldwide."
   },
+  "Theme": {
+    "label": "Change color theme",
+    "toLight": "Light mode",
+    "toDark": "Dark mode"
+  },
   "Home": {
     "badge": "Web and mobile development",
     "title": "We build websites, web apps and mobile apps that grow your business.",
     "subtitle": "Berox is a software agency from Egypt working with clients worldwide.",
-    "cta": "Book a free call"
+    "cta": "Book a free call",
+    "secondary": "See our work"
   }
 }
