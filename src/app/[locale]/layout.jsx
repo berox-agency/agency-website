@@ -33,6 +33,10 @@ const themeScript = `
     theme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
   }
   document.documentElement.setAttribute("data-theme", theme);
+  var meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) {
+    meta.setAttribute("content", theme === "light" ? "#F3F8F5" : "#08130F");
+  }
 })();
 `;
 
@@ -51,6 +55,12 @@ export async function generateMetadata({ params }) {
   return {
     title: t("title"),
     description: t("description"),
+    applicationName: "Berox",
+    appleWebApp: {
+      capable: true,
+      title: "Berox",
+      statusBarStyle: "default",
+    },
   };
 }
 
@@ -73,6 +83,7 @@ export default async function LocaleLayout({ children, params }) {
       suppressHydrationWarning
     >
       <head>
+        <meta name="theme-color" content="#08130F" suppressHydrationWarning />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-screen bg-canvas text-content antialiased">
