@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
+import { gsap, useGSAP } from "@/lib/gsap";
 import Logo from "@/components/Logo";
 import SlotLink from "@/components/SlotLink";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -33,11 +33,14 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
 
   const { contextSafe } = useGSAP(
     function () {
-      const trigger = ScrollTrigger.create({
-        start: 24,
-        end: "max",
-        toggleClass: { targets: bgRef.current, className: "is-scrolled" },
-      });
+      function onScroll() {
+        if (bgRef.current) {
+          bgRef.current.classList.toggle("is-scrolled", window.scrollY > 24);
+        }
+      }
+
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
 
       if (panelRef.current) {
         gsap.set(panelRef.current, {
@@ -60,7 +63,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
       });
 
       return function () {
-        trigger.kill();
+        window.removeEventListener("scroll", onScroll);
         mm.revert();
       };
     },

@@ -14,9 +14,15 @@ const variants = {
   },
 };
 
+const shapes = {
+  default: "rounded-button",
+  pill: "rounded-full",
+};
+
 const sizes = {
   sm: "px-5 py-2.5 text-sm",
   md: "px-7 py-4 text-sm",
+  icon: "h-[3.25rem] w-[3.25rem] text-sm",
 };
 
 export default function MagneticButton({
@@ -24,9 +30,11 @@ export default function MagneticButton({
   children,
   variant = "primary",
   size = "md",
+  shape = "default",
   strength = 0.35,
   className = "",
   onClick,
+  ...rest
 }) {
   const ref = useRef(null);
   const fillRef = useRef(null);
@@ -180,7 +188,9 @@ export default function MagneticButton({
   const style = variants[variant];
 
   const classes =
-    "relative inline-flex cursor-pointer items-center justify-center overflow-hidden rounded-button font-semibold will-change-transform focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary " +
+    "group relative inline-flex cursor-pointer items-center justify-center overflow-hidden font-semibold will-change-transform focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary " +
+    shapes[shape] +
+    " " +
     style.base +
     " " +
     sizes[size] +
@@ -188,7 +198,7 @@ export default function MagneticButton({
     className;
 
   return (
-    <a ref={ref} href={href} onClick={onClick} className={classes}>
+    <a ref={ref} href={href} onClick={onClick} className={classes} {...rest}>
       <span className="relative inline-flex items-center justify-center gap-2">
         {children}
       </span>

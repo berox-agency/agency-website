@@ -1,12 +1,15 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+import { siteConfig } from "@/config/site";
 
 export default async function HomePage({ params }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");
   const n = await getTranslations("Nav");
+  const f = await getTranslations("Footer");
 
   const links = [
     {
@@ -50,6 +53,27 @@ export default async function HomePage({ params }) {
     { label: n("contact"), href: "#contact" },
   ];
 
+  const footerLinks = [
+    { label: n("home"), href: "/" },
+    { label: n("services"), href: "#services" },
+    { label: n("work"), href: "#work" },
+    { label: n("process"), href: "#process" },
+    { label: n("contact"), href: "#contact" },
+  ];
+
+  const contacts = [
+    {
+      label: f("email"),
+      value: siteConfig.email,
+      href: "mailto:" + siteConfig.email,
+    },
+    {
+      label: f("phone"),
+      value: siteConfig.phone,
+      href: "tel:" + siteConfig.phone.split(" ").join(""),
+    },
+  ];
+
   const meta = [
     { value: t("meta1Value"), label: t("meta1Label") },
     { value: t("meta2Value"), label: t("meta2Label") },
@@ -76,6 +100,17 @@ export default async function HomePage({ params }) {
           image={null}
         />
       </main>
+      <Footer
+        heading={f("heading")}
+        cta={{ label: f("cta"), href: "mailto:" + siteConfig.email }}
+        links={footerLinks}
+        socials={siteConfig.socials}
+        contacts={contacts}
+        copyright={f("rights")}
+        year={new Date().getFullYear()}
+        backToTopLabel={f("backToTop")}
+        navLabel={f("navLabel")}
+      />
     </>
   );
 }

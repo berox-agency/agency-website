@@ -7,6 +7,7 @@
     "label": "Change color theme"
   },
   "Nav": {
+    "home": "Home",
     "services": "Services",
     "work": "Work",
     "process": "Process",
@@ -27,6 +28,15 @@
     "service5Text": "AI integrations, chatbots, workflow automation",
     "service6Title": "Support & Growth",
     "service6Text": "Maintenance, optimization, deployment, consulting"
+  },
+  "Footer": {
+    "heading": "Have a project or simply want to say hello? Reach out today!",
+    "cta": "Contact us today",
+    "backToTop": "Back to top",
+    "email": "Email",
+    "phone": "Phone",
+    "rights": "Berox Agency. All rights reserved.",
+    "navLabel": "Footer navigation"
   },
   "Home": {
     "eyebrow": "Software agency, Egypt",
