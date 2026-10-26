@@ -41,7 +41,7 @@
   --radius-button: 0.75rem;
 
   --spacing-section: 6rem;
-  --container-site: 72rem;
+  --container-site: 90rem;
 }
 
 body {
@@ -52,6 +52,12 @@ body {
 
 html[lang="ar"] body {
   font-family: var(--font-plex-arabic), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-hide {
+    visibility: hidden;
+  }
 }
 
 .theme-transition,
