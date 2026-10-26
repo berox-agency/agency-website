@@ -3,10 +3,43 @@
     "title": "Berox | Websites, Web Apps and Mobile Apps",
     "description": "Berox builds fast websites, web apps and Flutter mobile apps for businesses in Egypt and worldwide."
   },
+  "Theme": {
+    "label": "Change color theme"
+  },
+  "Nav": {
+    "services": "Services",
+    "work": "Work",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Get a free call",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "language": "Switch language",
+    "service1Title": "Web Development",
+    "service1Text": "Websites, e-commerce, web applications",
+    "service2Title": "Mobile Development",
+    "service2Text": "iOS, Android, Flutter applications",
+    "service3Title": "Design & Branding",
+    "service3Text": "UI/UX, product design, visual identity",
+    "service4Title": "Software & SaaS",
+    "service4Text": "Custom systems, dashboards, APIs, SaaS products",
+    "service5Title": "AI & Automation",
+    "service5Text": "AI integrations, chatbots, workflow automation",
+    "service6Title": "Support & Growth",
+    "service6Text": "Maintenance, optimization, deployment, consulting"
+  },
   "Home": {
-    "badge": "Web and mobile development",
-    "title": "We build websites, web apps and mobile apps that grow your business.",
-    "subtitle": "Berox is a software agency from Egypt working with clients worldwide.",
-    "cta": "Book a free call"
+    "eyebrow": "Software agency, Egypt",
+    "title": "Digital products, built with intent.",
+    "subtitle": "Berox is a software agency from Egypt. We design and build websites, web apps and Flutter mobile apps for businesses worldwide.",
+    "primary": "Start a project",
+    "secondary": "See selected work",
+    "caption": "Selected work, 2026",
+    "meta1Value": "03",
+    "meta1Label": "Web, apps and mobile",
+    "meta2Value": "02",
+    "meta2Label": "Arabic and English",
+    "meta3Value": "EG",
+    "meta3Label": "Based in Damietta, Egypt"
   }
 }

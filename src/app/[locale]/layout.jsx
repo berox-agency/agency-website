@@ -22,6 +22,20 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   display: "swap",
 });
 
+const themeScript = `
+(function () {
+  var stored = null;
+  try {
+    stored = localStorage.getItem("theme");
+  } catch (error) {}
+  var theme = stored;
+  if (theme !== "light" && theme !== "dark") {
+    theme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+`;
+
 export function generateStaticParams() {
   const params = [];
   for (let i = 0; i < routing.locales.length; i++) {
@@ -50,21 +64,18 @@ export default async function LocaleLayout({ children, params }) {
   setRequestLocale(locale);
   const messages = await getMessages();
   const dir = locale === "ar" ? "rtl" : "ltr";
-  const fontFamily =
-    locale === "ar"
-      ? "var(--font-plex-arabic), var(--font-inter), sans-serif"
-      : "var(--font-inter), sans-serif";
 
   return (
     <html
       lang={locale}
       dir={dir}
       className={inter.variable + " " + plexArabic.variable}
+      suppressHydrationWarning
     >
-      <body
-        className="min-h-screen antialiased"
-        style={{ fontFamily: fontFamily }}
-      >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="min-h-screen bg-canvas text-content antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
