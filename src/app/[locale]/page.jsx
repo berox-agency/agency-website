@@ -74,10 +74,13 @@ export default async function HomePage({ params }) {
     },
   ];
 
-  const meta = [
-    { value: t("meta1Value"), label: t("meta1Label") },
-    { value: t("meta2Value"), label: t("meta2Label") },
-    { value: t("meta3Value"), label: t("meta3Label") },
+  const services = [
+    n("service1Title"),
+    n("service2Title"),
+    n("service3Title"),
+    n("service4Title"),
+    n("service5Title"),
+    n("service6Title"),
   ];
 
   return (
@@ -91,13 +94,14 @@ export default async function HomePage({ params }) {
       <main>
         <Hero
           eyebrow={t("eyebrow")}
-          headline={t("title")}
+          headlineStart={t("titleStart")}
+          words={t.raw("words")}
+          headlineEnd={t("titleEnd")}
           text={t("subtitle")}
           primaryCta={{ label: t("primary"), href: "#contact" }}
           secondaryCta={{ label: t("secondary"), href: "#work" }}
-          meta={meta}
-          caption={t("caption")}
-          image={null}
+          services={services}
+          servicesLabel={t("servicesLabel")}
         />
       </main>
       <Footer

@@ -23,7 +23,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const navRef = useRef(null);
-  const bgRef = useRef(null);
+  const barBgRef = useRef(null);
   const overlayRef = useRef(null);
   const servicesRef = useRef(null);
   const triggerRef = useRef(null);
@@ -33,15 +33,6 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
 
   const { contextSafe } = useGSAP(
     function () {
-      function onScroll() {
-        if (bgRef.current) {
-          bgRef.current.classList.toggle("is-scrolled", window.scrollY > 24);
-        }
-      }
-
-      onScroll();
-      window.addEventListener("scroll", onScroll, { passive: true });
-
       if (panelRef.current) {
         gsap.set(panelRef.current, {
           y: 10,
@@ -63,7 +54,6 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
       });
 
       return function () {
-        window.removeEventListener("scroll", onScroll);
         mm.revert();
       };
     },
@@ -261,6 +251,29 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
     };
   }, []);
 
+  useEffect(function () {
+    const bar = barBgRef.current;
+
+    if (!bar) {
+      return undefined;
+    }
+
+    function onScroll() {
+      const scrolled = window.scrollY > 8 ? "true" : "false";
+
+      if (bar.dataset.scrolled !== scrolled) {
+        bar.dataset.scrolled = scrolled;
+      }
+    }
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return function () {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   function closeMenu() {
     setOpen(false);
   }
@@ -407,9 +420,11 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
     <>
       <header ref={navRef} className="motion-hide fixed inset-x-0 top-0 z-50">
         <div
-          ref={bgRef}
+          ref={barBgRef}
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 border-b border-transparent transition-[background-color,border-color,backdrop-filter] duration-300 [&.is-scrolled]:border-line [&.is-scrolled]:bg-canvas/70 [&.is-scrolled]:backdrop-blur-xl"
+          data-scrolled="false"
+          data-menu={open ? "open" : "closed"}
+          className="pointer-events-none absolute inset-0 border-b border-transparent bg-transparent transition-[background-color,border-color,backdrop-filter] duration-300 data-[menu=closed]:data-[scrolled=true]:border-line data-[menu=closed]:data-[scrolled=true]:bg-canvas/70 data-[menu=closed]:data-[scrolled=true]:backdrop-blur-xl data-[menu=closed]:data-[scrolled=true]:backdrop-saturate-150"
         ></div>
 
         <div className="relative mx-auto flex h-20 max-w-site items-center px-6 md:px-10">
@@ -429,7 +444,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
           <div className="hidden flex-1 items-center justify-end gap-3 lg:flex">
             <ThemeToggle />
             <LanguageSwitcher />
-            <MagneticButton href={cta.href} size="sm">
+            <MagneticButton href={cta.href} size="sm" attention>
               {cta.label}
             </MagneticButton>
           </div>
@@ -480,6 +495,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
             <MagneticButton
               href={cta.href}
               onClick={closeMenu}
+              attention
               className="w-full"
             >
               {cta.label}

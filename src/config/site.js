@@ -2,6 +2,7 @@ export const siteConfig = {
   name: "Berox",
   email: "hello@berox.example",
   phone: "+20 100 000 0000",
+  whatsapp: "201000000000",
   socials: [
     {
       name: "Instagram",

@@ -12,7 +12,7 @@
     "work": "Work",
     "process": "Process",
     "contact": "Contact",
-    "cta": "Get a free call",
+    "cta": "Book a free call",
     "menu": "Open menu",
     "close": "Close menu",
     "language": "Switch language",
@@ -39,17 +39,13 @@
     "navLabel": "Footer navigation"
   },
   "Home": {
-    "eyebrow": "Software agency, Egypt",
-    "title": "Digital products, built with intent.",
-    "subtitle": "Berox is a software agency from Egypt. We design and build websites, web apps and Flutter mobile apps for businesses worldwide.",
-    "primary": "Start a project",
-    "secondary": "See selected work",
-    "caption": "Selected work, 2026",
-    "meta1Value": "03",
-    "meta1Label": "Web, apps and mobile",
-    "meta2Value": "02",
-    "meta2Label": "Arabic and English",
-    "meta3Value": "EG",
-    "meta3Label": "Based in Damietta, Egypt"
+    "eyebrow": "Software agency",
+    "titleStart": "We Build Software That",
+    "words": ["Scales", "Optimizes", "Organizes", "Improves", "Accelerates"],
+    "titleEnd": "Your Business.",
+    "subtitle": "From MVP to enterprise-grade systems, we turn complex problems into elegant, high-performance digital products. Stop guessing and start shipping.",
+    "primary": "Start Your Project",
+    "secondary": "View Our Work",
+    "servicesLabel": "Our services"
   }
 }
