@@ -47,5 +47,67 @@
     "primary": "Start Your Project",
     "secondary": "View Our Work",
     "servicesLabel": "Our services"
+  },
+  "Services": {
+    "eyebrow": "What we do",
+    "title": "One team for everything you ship.",
+    "text": "From the first idea to a live product, we design, build and support the software your business runs on.",
+    "cta": "Discuss your project",
+    "items": [
+      {
+        "title": "Web Development",
+        "text": "Fast, search-friendly websites and web apps built to turn visitors into customers.",
+        "points": [
+          "Business websites and landing pages",
+          "E-commerce stores",
+          "Web apps and portals"
+        ]
+      },
+      {
+        "title": "Mobile Development",
+        "text": "Polished iOS and Android apps built from a single Flutter codebase.",
+        "points": [
+          "Flutter apps for iOS and Android",
+          "Store-ready builds",
+          "API and backend integration"
+        ]
+      },
+      {
+        "title": "Design & Branding",
+        "text": "Interfaces and identities that look credible and are easy to use.",
+        "points": [
+          "UI/UX and product design",
+          "Visual identity and logo",
+          "Design systems"
+        ]
+      },
+      {
+        "title": "Software & SaaS",
+        "text": "Custom systems and SaaS products built to handle real workloads.",
+        "points": [
+          "Dashboards and admin panels",
+          "Custom business systems",
+          "APIs and integrations"
+        ]
+      },
+      {
+        "title": "AI & Automation",
+        "text": "Put AI to work on repetitive tasks and customer conversations.",
+        "points": [
+          "Chatbots and assistants",
+          "AI integrations",
+          "Workflow automation"
+        ]
+      },
+      {
+        "title": "Support & Growth",
+        "text": "We keep what we build fast, secure and improving after launch.",
+        "points": [
+          "Maintenance and updates",
+          "Performance optimization",
+          "Deployment and consulting"
+        ]
+      }
+    ]
   }
 }

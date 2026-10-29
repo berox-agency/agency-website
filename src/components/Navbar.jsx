@@ -333,7 +333,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
         <div
           key={link.label}
           ref={servicesRef}
-          className="flex h-20 items-center"
+          className="flex h-20 items-center gap-0.5"
           onPointerEnter={function (event) {
             if (event.pointerType === "mouse") {
               openServices();
@@ -351,34 +351,38 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
           }}
         >
           <SlotLink
-            as="button"
-            type="button"
+            href={link.href}
             triggerRef={triggerRef}
             active={servicesOpen}
-            aria-haspopup="true"
-            aria-expanded={servicesOpen}
-            aria-controls="services-menu"
-            onClick={openServices}
-            trailing={
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-                className={
-                  "h-3.5 w-3.5 transition-transform duration-300 " +
-                  (servicesOpen ? "rotate-180" : "")
-                }
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            }
+            onClick={closeServices}
           >
             {link.label}
           </SlotLink>
+          <button
+            type="button"
+            aria-label={link.label}
+            aria-haspopup="true"
+            aria-expanded={servicesOpen}
+            aria-controls="services-menu"
+            onClick={servicesOpen ? closeServices : openServices}
+            className="grid h-8 w-6 cursor-pointer place-items-center text-content/80 transition-colors hover:text-content focus-visible:text-content focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className={
+                "h-3.5 w-3.5 transition-transform duration-300 " +
+                (servicesOpen ? "rotate-180" : "")
+              }
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
 
           <div className="pointer-events-none absolute left-1/2 top-full w-184 max-w-[calc(100vw-3rem)] -translate-x-1/2">
             <div

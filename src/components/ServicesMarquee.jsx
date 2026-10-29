@@ -72,7 +72,7 @@ export default function ServicesMarquee({
     <div
       role="region"
       aria-label={label}
-      className={"marquee border-t border-line bg-canvas " + className}
+      className={"marquee border-y border-line bg-canvas " + className}
     >
       <div className="marquee-viewport overflow-hidden py-5 md:py-6">
         <div

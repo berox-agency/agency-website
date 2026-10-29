@@ -119,7 +119,7 @@ export default function Hero({
         <div className="mx-auto flex w-full max-w-5xl flex-col items-center text-center">
           <p
             ref={eyebrowRef}
-            className="motion-hide mb-[clamp(0.75rem,3svh,2rem)] flex items-center justify-center gap-3 text-[clamp(0.75rem,1.8svh,0.875rem)] font-medium uppercase tracking-[0.2em] text-muted rtl:tracking-normal"
+            className="motion-hide mb-[clamp(0.75rem,3svh,2rem)] flex items-center justify-center gap-3 text-[clamp(1rem,2svh,1rem)] font-medium uppercase tracking-[0.2em] text-muted rtl:tracking-normal"
           >
             <span className="h-px w-8 bg-primary md:w-10"></span>
             <span>

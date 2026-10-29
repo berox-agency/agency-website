@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import ServicesSticky from "@/components/ServicesSticky";
 import Footer from "@/components/Footer";
 import { siteConfig } from "@/config/site";
 
@@ -10,6 +11,7 @@ export default async function HomePage({ params }) {
   const t = await getTranslations("Home");
   const n = await getTranslations("Nav");
   const f = await getTranslations("Footer");
+  const s = await getTranslations("Services");
 
   const links = [
     {
@@ -83,6 +85,14 @@ export default async function HomePage({ params }) {
     n("service6Title"),
   ];
 
+  const servicesProps = {
+    eyebrow: s("eyebrow"),
+    title: s("title"),
+    text: s("text"),
+    cta: { label: s("cta"), href: "#contact" },
+    items: s.raw("items"),
+  };
+
   return (
     <>
       <Navbar
@@ -103,6 +113,7 @@ export default async function HomePage({ params }) {
           services={services}
           servicesLabel={t("servicesLabel")}
         />
+        <ServicesSticky id="services" {...servicesProps} />
       </main>
       <Footer
         heading={f("heading")}

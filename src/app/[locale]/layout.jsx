@@ -7,6 +7,7 @@ import {
   setRequestLocale,
 } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import SmoothAnchors from "@/components/SmoothAnchors";
 import "../globals.css";
 // import WhatsAppButton from "@/components/Whatsappbutton";
 
@@ -89,6 +90,7 @@ export default async function LocaleLayout({ children, params }) {
       </head>
       <body className="min-h-screen bg-canvas text-content antialiased">
         <NextIntlClientProvider messages={messages}>
+          <SmoothAnchors />
           {children}
           {/* <WhatsAppButton /> */}
         </NextIntlClientProvider>

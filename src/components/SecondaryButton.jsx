@@ -35,10 +35,10 @@ export default function SecondaryButton({
       <span className="whitespace-nowrap transition-colors duration-300 group-hover:text-primary group-focus-visible:text-primary">
         {children}
       </span>
-      <span className="relative grid h-[calc(var(--btn-h)_-_0.5rem_-_2px)] w-[calc(var(--btn-h)_-_0.5rem_-_2px)] shrink-0 place-items-center overflow-hidden rounded-full bg-primary/15 text-primary transition-colors duration-500 group-hover:bg-primary group-hover:text-onprimary group-focus-visible:bg-primary group-focus-visible:text-onprimary">
+      <span className="relative grid size-[calc(var(--btn-h)-0.5rem-2px)] shrink-0 place-items-center overflow-hidden rounded-full bg-primary/15 text-primary transition-colors duration-500 group-hover:bg-primary group-hover:text-onprimary group-focus-visible:bg-primary group-focus-visible:text-onprimary">
         <span className="grid place-items-center rtl:-scale-x-100">
-          <ArrowIcon className="group-hover:-translate-y-[220%] group-hover:translate-x-[220%] group-focus-visible:-translate-y-[220%] group-focus-visible:translate-x-[220%]" />
-          <ArrowIcon className="-translate-x-[220%] translate-y-[220%] group-hover:translate-x-0 group-hover:translate-y-0 group-focus-visible:translate-x-0 group-focus-visible:translate-y-0" />
+          <ArrowIcon className="group-hover:translate-y-[-220%] group-hover:translate-x-[220%]  group-focus-visible:translate-x-[220%]" />
+          <ArrowIcon className="translate-x-[-220%] translate-y-[220%] group-hover:translate-x-0 group-hover:translate-y-0 group-focus-visible:translate-x-0 group-focus-visible:translate-y-0" />
         </span>
       </span>
     </a>
