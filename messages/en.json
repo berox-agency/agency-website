@@ -109,5 +109,277 @@
         ]
       }
     ]
+  },
+  "Process": {
+    "eyebrow": "How we work",
+    "title": "A clear path from idea to launch.",
+    "text": "Five simple steps, no surprises. You always know what we're doing and what comes next.",
+    "cta": "Start your project",
+    "items": [
+      {
+        "title": "Discover",
+        "text": "We listen to your goals, users and budget, then agree on scope, timeline and price.",
+        "points": [
+          "Free intro call",
+          "Scope and requirements",
+          "Clear quote and timeline"
+        ]
+      },
+      {
+        "title": "Design",
+        "text": "We turn the plan into wireframes and a visual design you approve before any code is written.",
+        "points": [
+          "Wireframes and user flow",
+          "UI design in your branding",
+          "Your sign-off before development"
+        ]
+      },
+      {
+        "title": "Build",
+        "text": "We develop in short cycles and show you working progress along the way.",
+        "points": [
+          "Web (Next.js) or mobile (Flutter) development",
+          "Regular progress demos",
+          "Backend and API integration"
+        ]
+      },
+      {
+        "title": "Launch",
+        "text": "We test everything, fix issues, then deploy and hand it over.",
+        "points": [
+          "Testing on real devices",
+          "Deployment and store submission",
+          "Handover and walkthrough"
+        ]
+      },
+      {
+        "title": "Support & Grow",
+        "text": "We keep it fast, secure and improving after it goes live.",
+        "points": [
+          "Maintenance and updates",
+          "Performance monitoring",
+          "New features as you grow"
+        ]
+      }
+    ]
+  },
+  "WhyBerox": {
+    "eyebrow": "Why Berox",
+    "title": "Everything you need to launch, under one roof.",
+    "text": "Strategy, design and engineering in one team, delivering globally ready products that keep improving after launch.",
+    "features": [
+      {
+        "value": "1 team",
+        "text": "Web, mobile and backend built together."
+      },
+      {
+        "value": "Performance first",
+        "text": "Fast load times and strong Core Web Vitals from the first release."
+      },
+      {
+        "value": "Full ownership",
+        "text": "The code, the designs and the infrastructure belong to you."
+      },
+      {
+        "value": "After launch",
+        "text": "Monitoring, fixes and ongoing growth."
+      }
+    ],
+    "stackLabel": "Tech stack",
+    "stackAria": "Technologies we build with"
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered before you ask.",
+    "text": "Pricing, timelines and what we need from you, explained plainly. Can’t find your question? Talk to us.",
+    "allLabel": "All",
+    "tabsLabel": "FAQ categories",
+    "tabs": [
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "items": [
+          {
+            "q": "How do you price your projects?",
+            "a": "Most projects are fixed-scope and fixed-price. After a discovery call you receive a written proposal with the scope, milestones and one total price, so there are no surprises."
+          },
+          {
+            "q": "Can you work on an hourly or monthly basis instead?",
+            "a": "Yes. For ongoing or evolving work we offer a monthly retainer or a dedicated team, billed on a predictable schedule."
+          },
+          {
+            "q": "What affects the cost of a project?",
+            "a": "Mainly the number of screens and features, the complexity of integrations, custom design, and how much content needs to be created. A clearer brief means a more accurate quote."
+          },
+          {
+            "q": "How does payment work?",
+            "a": "Payment is split by milestone, with a deposit to reserve your start date. Each stage is invoiced only when it is delivered and approved."
+          },
+          {
+            "q": "Are there any hidden costs?",
+            "a": "No. The proposal lists everything that is included. Third-party costs such as hosting, domains, app store accounts and paid APIs are listed separately, and those accounts stay in your name."
+          },
+          {
+            "q": "What happens if the scope changes mid-project?",
+            "a": "Changes are welcome. We write up the impact on cost and timeline first, and work on the change starts only after you approve it in writing."
+          }
+        ]
+      },
+      {
+        "id": "timelines",
+        "label": "Timelines",
+        "items": [
+          {
+            "q": "How long does a project take?",
+            "a": "A business website usually takes 2–4 weeks. Web apps and mobile apps typically take 8–16 weeks, depending on features and integrations. Your proposal includes dated milestones."
+          },
+          {
+            "q": "Can you deliver an MVP quickly?",
+            "a": "Yes. We can start with the smallest version that proves your idea, launch it, and build on real user feedback instead of guessing."
+          },
+          {
+            "q": "What can delay a project?",
+            "a": "Most delays come from late content, scattered feedback or scope changes. Agreeing on review windows and a single approver at the start keeps things on track."
+          },
+          {
+            "q": "How often will I see progress?",
+            "a": "You get regular updates and a working demo at the end of each milestone, so you review real progress rather than status reports."
+          },
+          {
+            "q": "Do you offer rush delivery?",
+            "a": "Sometimes. If your deadline is fixed, we can reduce the scope or add resources to meet it, and we will tell you honestly what is realistic."
+          },
+          {
+            "q": "When can you start?",
+            "a": "Start dates depend on our current schedule. Once you approve the proposal and pay the deposit, we confirm a start date in writing."
+          }
+        ]
+      },
+      {
+        "id": "start",
+        "label": "Getting started",
+        "items": [
+          {
+            "q": "What do you need from me to get started?",
+            "a": "A clear goal, your brand assets (logo, colors, fonts), any existing content, and one point of contact who can approve work. If something is missing, we can help you create it."
+          },
+          {
+            "q": "I only have an idea. Can you still help?",
+            "a": "Absolutely. We start with a discovery session to define the problem, the users and the scope, then turn it into a clear plan and estimate."
+          },
+          {
+            "q": "How do I start a project with you?",
+            "a": "Contact us with a short description of your goals. We schedule a call, send a proposal, and begin once you approve it."
+          },
+          {
+            "q": "Do I need technical knowledge?",
+            "a": "No. We explain decisions in plain language and handle the technical side, while you focus on your business and on approvals."
+          },
+          {
+            "q": "Do you sign an NDA?",
+            "a": "Yes. We are happy to sign a non-disclosure agreement before you share any confidential details about your product or business."
+          },
+          {
+            "q": "Who writes the content and provides the images?",
+            "a": "You can provide them, or we can help with copywriting, design and image sourcing. Content is the most common cause of delays, so we plan it early."
+          }
+        ]
+      },
+      {
+        "id": "process",
+        "label": "Process",
+        "items": [
+          {
+            "q": "What is your development process?",
+            "a": "We move through discovery, design, development, testing and launch. Each phase ends with a review so you can approve before we continue."
+          },
+          {
+            "q": "How will we communicate?",
+            "a": "You get one point of contact, a shared channel for day-to-day questions, and scheduled check-ins. We aim to reply to messages within one business day."
+          },
+          {
+            "q": "Will I review the design before development starts?",
+            "a": "Yes. You approve the design, usually as an interactive prototype, before any development begins, which avoids costly rework later."
+          },
+          {
+            "q": "Which technologies do you use?",
+            "a": "We choose tools to fit your goals: modern web frameworks for websites and web apps, and Flutter for iOS and Android apps from a single codebase."
+          },
+          {
+            "q": "How do you make sure the quality is high?",
+            "a": "We test on real devices and browsers, check performance and accessibility, and fix issues before launch. You also get a review period to check everything yourself."
+          },
+          {
+            "q": "Do you work with clients outside Egypt?",
+            "a": "Yes. We work remotely with clients worldwide, in English and Arabic, across time zones."
+          }
+        ]
+      },
+      {
+        "id": "ownership",
+        "label": "Ownership",
+        "items": [
+          {
+            "q": "Who owns the code and design?",
+            "a": "You do. Once the final payment is made, all source code, designs and accounts are transferred to you."
+          },
+          {
+            "q": "Do I get access to the code during development?",
+            "a": "Yes. We can work in a repository that you own, so you can follow progress and are never locked in."
+          },
+          {
+            "q": "Are my data and my customers’ data secure?",
+            "a": "We follow security best practices: encrypted connections, controlled access and careful handling of credentials. Sensitive data is only used for your project."
+          },
+          {
+            "q": "Do you use third-party or open-source software?",
+            "a": "Where it makes sense, yes. We use well-maintained libraries and tell you about any licenses that apply to your product."
+          },
+          {
+            "q": "Is there a written contract?",
+            "a": "Yes. Every project has a written agreement that covers scope, timeline, payment terms, ownership and confidentiality."
+          },
+          {
+            "q": "Can I move my project to another team later?",
+            "a": "Yes. We deliver clean, documented code and handover notes so another team can continue the work if you choose."
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "label": "Support",
+        "items": [
+          {
+            "q": "Do you support the project after launch?",
+            "a": "Yes. Our Support & Growth plan covers updates, monitoring, fixes and new features after launch."
+          },
+          {
+            "q": "What if something breaks after launch?",
+            "a": "Tell us and we will investigate right away. Support terms are agreed in your proposal, so you know what to expect."
+          },
+          {
+            "q": "Can you improve an existing website or app?",
+            "a": "Yes. We review what you have, then fix, redesign or extend it, or migrate it to a modern stack."
+          },
+          {
+            "q": "Do you handle hosting and deployment?",
+            "a": "Yes. We can set up and manage hosting, domains and automated deployment, or hand everything over to your own team."
+          },
+          {
+            "q": "Can you help my product grow after launch?",
+            "a": "Yes. We help with performance, search visibility and new features, guided by how real users use your product."
+          },
+          {
+            "q": "Will you train my team?",
+            "a": "Yes. We provide guides and a walkthrough so your team can manage content and day-to-day tasks with confidence."
+          }
+        ]
+      }
+    ],
+    "banner": {
+      "title": "Still have a question?",
+      "text": "Tell us about your project and we’ll reply with clear answers and next steps.",
+      "cta": "Contact us"
+    }
   }
 }

@@ -14,7 +14,7 @@ export default function SectionHeading({
     <Reveal className={(center ? "text-center " : "") + className}>
       <p
         className={
-          "motion-hide flex items-center gap-3 text-base font-medium uppercase tracking-[0.2em] text-muted rtl:tracking-normal " +
+          "motion-hide flex items-center gap-3 text-lg font-medium uppercase tracking-[0.2em] text-muted rtl:tracking-normal " +
           (center ? "justify-center" : "")
         }
       >

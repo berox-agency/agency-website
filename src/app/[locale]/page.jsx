@@ -2,8 +2,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ServicesSticky from "@/components/ServicesSticky";
+import ProcessTimeline from "@/components/ProcessTimeline";
 import Footer from "@/components/Footer";
 import { siteConfig } from "@/config/site";
+import { techStack } from "@/config/tech-stack";
+import WhyBerox from "@/components/WhyBerox";
+import Faq from "@/components/Faq";
 
 export default async function HomePage({ params }) {
   const { locale } = await params;
@@ -12,6 +16,9 @@ export default async function HomePage({ params }) {
   const n = await getTranslations("Nav");
   const f = await getTranslations("Footer");
   const s = await getTranslations("Services");
+  const p = await getTranslations("Process");
+  const w = await getTranslations("WhyBerox");
+  const q = await getTranslations("Faq");
 
   const links = [
     {
@@ -93,6 +100,14 @@ export default async function HomePage({ params }) {
     items: s.raw("items"),
   };
 
+  const processProps = {
+    eyebrow: p("eyebrow"),
+    title: p("title"),
+    text: p("text"),
+    cta: { label: p("cta"), href: "#contact" },
+    items: p.raw("items"),
+  };
+
   return (
     <>
       <Navbar
@@ -114,6 +129,33 @@ export default async function HomePage({ params }) {
           servicesLabel={t("servicesLabel")}
         />
         <ServicesSticky id="services" {...servicesProps} />
+        <ProcessTimeline id="process" {...processProps} />
+        <WhyBerox
+          id="why-berox"
+          eyebrow={w("eyebrow")}
+          title={w("title")}
+          text={w("text")}
+          features={w.raw("features")}
+          stack={{
+            label: w("stackLabel"),
+            ariaLabel: w("stackAria"),
+            items: techStack,
+          }}
+        />
+        <Faq
+          id="faq"
+          eyebrow={q("eyebrow")}
+          title={q("title")}
+          text={q("text")}
+          allLabel={q("allLabel")}
+          tabsLabel={q("tabsLabel")}
+          tabs={q.raw("tabs")}
+          banner={{
+            title: q("banner.title"),
+            text: q("banner.text"),
+            cta: { label: q("banner.cta"), href: "#contact" },
+          }}
+        />
       </main>
       <Footer
         heading={f("heading")}
