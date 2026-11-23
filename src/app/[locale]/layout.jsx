@@ -7,9 +7,12 @@ import {
   setRequestLocale,
 } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { siteConfig } from "@/config/site";
 import SmoothAnchors from "@/components/SmoothAnchors";
+import ScrollRefresh from "@/components/ScrollRefresh";
+import Preloader from "@/components/Preloader";
+import OrganizationJsonLd from "@/components/OrganizationJsonLd";
 import "../globals.css";
-// import WhatsAppButton from "@/components/Whatsappbutton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,6 +45,24 @@ const themeScript = `
 })();
 `;
 
+const preloaderScript = `
+(function () {
+  try {
+    var entries = performance.getEntriesByType("navigation");
+    var reloaded = entries.length > 0 && entries[0].type === "reload";
+    var seen = sessionStorage.getItem("berox-preloader") === "1";
+    if (seen && !reloaded) {
+      document.documentElement.setAttribute("data-skip-preloader", "");
+    } else {
+      sessionStorage.setItem("berox-preloader", "1");
+    }
+  } catch (error) {}
+})();
+`;
+
+const noscriptStyles =
+  ".preloader{display:none!important}.motion-hide{visibility:visible!important}";
+
 export function generateStaticParams() {
   const params = [];
   for (let i = 0; i < routing.locales.length; i++) {
@@ -55,6 +76,7 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations({ locale: locale, namespace: "Metadata" });
 
   return {
+    metadataBase: new URL(siteConfig.url),
     title: t("title"),
     description: t("description"),
     applicationName: "Berox",
@@ -63,6 +85,19 @@ export async function generateMetadata({ params }) {
       title: "Berox",
       statusBarStyle: "default",
     },
+    robots: siteConfig.indexable
+      ? {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+          },
+        }
+      : { index: false, follow: false },
   };
 }
 
@@ -75,6 +110,10 @@ export default async function LocaleLayout({ children, params }) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const loading = await getTranslations({
+    locale: locale,
+    namespace: "Loading",
+  });
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
@@ -87,12 +126,18 @@ export default async function LocaleLayout({ children, params }) {
       <head>
         <meta name="theme-color" content="#08130F" suppressHydrationWarning />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script dangerouslySetInnerHTML={{ __html: preloaderScript }} />
+        <noscript>
+          <style dangerouslySetInnerHTML={{ __html: noscriptStyles }} />
+        </noscript>
       </head>
       <body className="min-h-screen bg-canvas text-content antialiased">
+        <OrganizationJsonLd locale={locale} />
         <NextIntlClientProvider messages={messages}>
+          <Preloader label={loading("label")} />
           <SmoothAnchors />
+          <ScrollRefresh />
           {children}
-          {/* <WhatsAppButton /> */}
         </NextIntlClientProvider>
       </body>
     </html>

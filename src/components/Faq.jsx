@@ -313,7 +313,7 @@ export default function Faq({
   };
 
   return (
-    <section ref={rootRef} id={id} className="scroll-mt-20 py-5 md:py-10">
+    <section ref={rootRef} id={id} className="scroll-mt-20 py-24 md:py-32">
       {schema ? (
         <script
           type="application/ld+json"

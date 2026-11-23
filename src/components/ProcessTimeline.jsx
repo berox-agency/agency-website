@@ -340,7 +340,7 @@ export default function ProcessTimeline({
   }
 
   return (
-    <section id={id} className={"scroll-mt-20 py-5 md:py-16 " + className}>
+    <section id={id} className={"scroll-mt-20 py-24 md:py-32 " + className}>
       <div className="mx-auto max-w-site px-6 md:px-10">
         <SectionHeading
           align="center"

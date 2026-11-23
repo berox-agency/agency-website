@@ -35,6 +35,7 @@ export default function MagneticButton({
   strength = 0.35,
   className = "",
   onClick,
+  type = "button",
   attention = false,
   ...rest
 }) {
@@ -202,8 +203,17 @@ export default function MagneticButton({
     (attention ? "cta-attention " : "") +
     className;
 
+  const Tag = href === undefined ? "button" : "a";
+
   return (
-    <a ref={ref} href={href} onClick={onClick} className={classes} {...rest}>
+    <Tag
+      ref={ref}
+      href={href}
+      type={href === undefined ? type : undefined}
+      onClick={onClick}
+      className={classes}
+      {...rest}
+    >
       <span className="relative inline-flex items-center justify-center gap-2">
         {children}
       </span>
@@ -218,6 +228,6 @@ export default function MagneticButton({
       >
         {children}
       </span>
-    </a>
+    </Tag>
   );
 }

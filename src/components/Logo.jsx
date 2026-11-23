@@ -4,7 +4,7 @@ export default function Logo({ className = "h-8" }) {
   return (
     <span className={"inline-flex items-center " + className}>
       <Image
-        src="/logo-on-dark.png"
+        src="/logo-on-dark.webp"
         alt="Berox"
         width={673}
         height={128}
@@ -12,7 +12,7 @@ export default function Logo({ className = "h-8" }) {
         className="h-full w-auto [:root[data-theme=light]_&]:hidden"
       />
       <Image
-        src="/logo-on-light.png"
+        src="/logo-on-light.webp"
         alt="Berox"
         width={673}
         height={128}

@@ -279,7 +279,7 @@ export default function Footer({
 
   return (
     <footer
-      id="contact"
+      id="footer"
       ref={rootRef}
       className="relative isolate overflow-hidden border-t border-line bg-canvas"
     >
@@ -338,6 +338,8 @@ export default function Footer({
           >
             <MagneticButton
               href={cta.href}
+              target={cta.target}
+              rel={cta.rel}
               shape="pill"
               className="uppercase tracking-[0.08em] rtl:tracking-normal"
             >
@@ -345,6 +347,8 @@ export default function Footer({
             </MagneticButton>
             <MagneticButton
               href={cta.href}
+              target={cta.target}
+              rel={cta.rel}
               shape="pill"
               size="icon"
               aria-label={cta.label}

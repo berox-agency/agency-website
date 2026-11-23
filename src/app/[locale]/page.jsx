@@ -8,6 +8,24 @@ import { siteConfig } from "@/config/site";
 import { techStack } from "@/config/tech-stack";
 import WhyBerox from "@/components/WhyBerox";
 import Faq from "@/components/Faq";
+import WorkSection from "@/components/WorkSection";
+import SectionDivider from "@/components/SectionDivider";
+import { getWorkConfig } from "@/config/work";
+import JsonLd from "@/components/JsonLd";
+import { homeSchema } from "@/lib/schema";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale: locale, namespace: "Metadata" });
+
+  return buildMetadata({
+    locale: locale,
+    path: "",
+    title: t("title"),
+    description: t("description"),
+  });
+}
 
 export default async function HomePage({ params }) {
   const { locale } = await params;
@@ -19,6 +37,12 @@ export default async function HomePage({ params }) {
   const p = await getTranslations("Process");
   const w = await getTranslations("WhyBerox");
   const q = await getTranslations("Faq");
+  const k = await getTranslations("Work");
+  const meta = await getTranslations("Metadata");
+
+  const base = "/" + locale;
+  const workHref = base + "/work";
+  const contactHref = base + "/contact";
 
   const links = [
     {
@@ -57,17 +81,18 @@ export default async function HomePage({ params }) {
         },
       ],
     },
-    { label: n("work"), href: "#work" },
+    { label: n("work"), href: workHref },
     { label: n("process"), href: "#process" },
-    { label: n("contact"), href: "#contact" },
+    { label: n("contact"), href: contactHref },
   ];
 
   const footerLinks = [
     { label: n("home"), href: "/" },
     { label: n("services"), href: "#services" },
-    { label: n("work"), href: "#work" },
+    { label: n("work"), href: "/work" },
     { label: n("process"), href: "#process" },
-    { label: n("contact"), href: "#contact" },
+    { label: n("contact"), href: "/contact" },
+    { label: f("privacy"), href: "/privacy" },
   ];
 
   const contacts = [
@@ -96,7 +121,7 @@ export default async function HomePage({ params }) {
     eyebrow: s("eyebrow"),
     title: s("title"),
     text: s("text"),
-    cta: { label: s("cta"), href: "#contact" },
+    cta: { label: s("cta"), href: contactHref },
     items: s.raw("items"),
   };
 
@@ -104,15 +129,37 @@ export default async function HomePage({ params }) {
     eyebrow: p("eyebrow"),
     title: p("title"),
     text: p("text"),
-    cta: { label: p("cta"), href: "#contact" },
+    cta: { label: p("cta"), href: contactHref },
     items: p.raw("items"),
   };
 
+  const workItems = k.raw("projects");
+  const projects = [];
+  for (let i = 0; i < workItems.length && i < 3; i++) {
+    const config = getWorkConfig(workItems[i].slug);
+    projects.push({
+      ...workItems[i],
+      href: "/work/" + workItems[i].slug,
+      live: config ? config.live : "",
+      liveLabel: config ? config.liveLabel : "",
+      cover: config ? config.cover : "",
+      coverMobile: config ? config.coverMobile : "",
+    });
+  }
+
   return (
     <>
+      <JsonLd
+        data={homeSchema({
+          locale: locale,
+          title: meta("title"),
+          description: meta("description"),
+          serviceItems: s.raw("items"),
+        })}
+      />
       <Navbar
         links={links}
-        cta={{ label: n("cta"), href: "#contact" }}
+        cta={{ label: n("cta"), href: contactHref }}
         menuLabel={n("menu")}
         closeLabel={n("close")}
       />
@@ -123,13 +170,27 @@ export default async function HomePage({ params }) {
           words={t.raw("words")}
           headlineEnd={t("titleEnd")}
           text={t("subtitle")}
-          primaryCta={{ label: t("primary"), href: "#contact" }}
+          primaryCta={{ label: t("primary"), href: contactHref }}
           secondaryCta={{ label: t("secondary"), href: "#work" }}
           services={services}
           servicesLabel={t("servicesLabel")}
         />
         <ServicesSticky id="services" {...servicesProps} />
+        <SectionDivider />
+        <WorkSection
+          id="work"
+          eyebrow={k("eyebrow")}
+          title={k("title")}
+          text={k("text")}
+          cta={{ label: k("cta"), href: contactHref }}
+          viewAll={{ label: k("ui.viewAll"), href: workHref }}
+          placeholders={k.raw("placeholders")}
+          projects={projects}
+          liveText={k("ui.live")}
+        />
+        <SectionDivider />
         <ProcessTimeline id="process" {...processProps} />
+        <SectionDivider />
         <WhyBerox
           id="why-berox"
           eyebrow={w("eyebrow")}
@@ -142,6 +203,7 @@ export default async function HomePage({ params }) {
             items: techStack,
           }}
         />
+        <SectionDivider />
         <Faq
           id="faq"
           eyebrow={q("eyebrow")}
@@ -153,13 +215,18 @@ export default async function HomePage({ params }) {
           banner={{
             title: q("banner.title"),
             text: q("banner.text"),
-            cta: { label: q("banner.cta"), href: "#contact" },
+            cta: { label: q("banner.cta"), href: contactHref },
           }}
         />
       </main>
       <Footer
         heading={f("heading")}
-        cta={{ label: f("cta"), href: "mailto:" + siteConfig.email }}
+        cta={{
+          label: f("cta"),
+          href: "https://wa.me/" + siteConfig.whatsapp,
+          target: "_blank",
+          rel: "noopener noreferrer",
+        }}
         links={footerLinks}
         socials={siteConfig.socials}
         contacts={contacts}

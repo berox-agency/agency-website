@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Berox | Websites, Web Apps and Mobile Apps",
-    "description": "Berox builds fast websites, web apps and Flutter mobile apps for businesses in Egypt and worldwide."
+    "title": "Software Agency in Egypt | Web and Mobile Apps | Berox",
+    "description": "Egypt-based software agency building websites, web apps and Flutter mobile apps for businesses in Egypt, the Gulf and worldwide. Work in English and Arabic."
   },
   "Theme": {
     "label": "Change color theme"
@@ -36,7 +36,8 @@
     "email": "Email",
     "phone": "Phone",
     "rights": "Berox Agency. All rights reserved.",
-    "navLabel": "Footer navigation"
+    "navLabel": "Footer navigation",
+    "privacy": "Privacy policy"
   },
   "Home": {
     "eyebrow": "Software agency",
@@ -51,7 +52,7 @@
   "Services": {
     "eyebrow": "What we do",
     "title": "One team for everything you ship.",
-    "text": "From the first idea to a live product, we design, build and support the software your business runs on.",
+    "text": "Berox is an Egypt-based software agency. We design, build and support websites, web apps, Flutter mobile apps for iOS and Android, custom software and SaaS products, AI chatbots and workflow automation. One team handles design, development and post-launch support for businesses in Egypt, the Gulf and worldwide.",
     "cta": "Discuss your project",
     "items": [
       {
@@ -113,7 +114,7 @@
   "Process": {
     "eyebrow": "How we work",
     "title": "A clear path from idea to launch.",
-    "text": "Five simple steps, no surprises. You always know what we're doing and what comes next.",
+    "text": "A Berox project has five steps: discover, design, build, launch, and support and grow. After a free intro call we agree scope, timeline and price. You approve the design before any code is written, we show working demos while building, then we test, deploy and hand everything over.",
     "cta": "Start your project",
     "items": [
       {
@@ -166,7 +167,7 @@
   "WhyBerox": {
     "eyebrow": "Why Berox",
     "title": "Everything you need to launch, under one roof.",
-    "text": "Strategy, design and engineering in one team, delivering globally ready products that keep improving after launch.",
+    "text": "Berox combines strategy, design and engineering in one team, so web, mobile and backend are built together. You own the code, designs and infrastructure, you approve the design before development, and you see working demos along the way. After launch we provide monitoring, fixes and ongoing improvements.",
     "features": [
       {
         "value": "1 team",
@@ -222,6 +223,18 @@
           {
             "q": "What happens if the scope changes mid-project?",
             "a": "Changes are welcome. We write up the impact on cost and timeline first, and work on the change starts only after you approve it in writing."
+          },
+          {
+            "q": "How much does a mobile app cost in Egypt?",
+            "a": "The cost depends on the number of screens and features, integrations, custom design and the content to be created. We do not publish a fixed price list because every app is different. After a discovery call you receive a written proposal with one total price, split by milestone."
+          },
+          {
+            "q": "How much does a website cost in Egypt?",
+            "a": "The price depends on the number of pages, the features, custom design and how much content must be written. A business website usually takes 2–4 weeks. After a discovery call you receive a written proposal with the scope, milestones and one total price."
+          },
+          {
+            "q": "Do you build online stores (e-commerce)?",
+            "a": "Yes. Our in-house Bazaro project is a reference store with a guest cart, cart drawer, filters, search and checkout with two payment options. Tell us what you want to sell and we will plan the build together."
           }
         ]
       },
@@ -231,7 +244,7 @@
         "items": [
           {
             "q": "How long does a project take?",
-            "a": "A business website usually takes 2–4 weeks. Web apps and mobile apps typically take 8–16 weeks, depending on features and integrations. Your proposal includes dated milestones."
+            "a": "A business website usually takes 2–4 weeks. Web apps and mobile apps typically take 4–8 weeks, depending on features and integrations. Your proposal includes dated milestones."
           },
           {
             "q": "Can you deliver an MVP quickly?",
@@ -252,6 +265,10 @@
           {
             "q": "When can you start?",
             "a": "Start dates depend on our current schedule. Once you approve the proposal and pay the deposit, we confirm a start date in writing."
+          },
+          {
+            "q": "How long does it take to build a SaaS product or MVP?",
+            "a": "A first version of a web app or SaaS product typically takes 4–8 weeks, depending on features and integrations. We start with the smallest version that proves your idea, launch it, and extend it based on real user feedback."
           }
         ]
       },
@@ -282,6 +299,10 @@
           {
             "q": "Who writes the content and provides the images?",
             "a": "You can provide them, or we can help with copywriting, design and image sourcing. Content is the most common cause of delays, so we plan it early."
+          },
+          {
+            "q": "What is the difference between a website and a web app?",
+            "a": "A website mainly presents information, such as a company, its services or a store catalog. A web app lets users complete tasks, such as logging in, managing data or placing orders. Many projects combine both, and we help you choose the simplest option that meets your goal."
           }
         ]
       },
@@ -312,6 +333,14 @@
           {
             "q": "Do you work with clients outside Egypt?",
             "a": "Yes. We work remotely with clients worldwide, in English and Arabic, across time zones."
+          },
+          {
+            "q": "What is Flutter and why do you use it for mobile apps?",
+            "a": "Flutter is Google's open-source framework for building iOS and Android apps from a single codebase. One codebase means one team builds both apps together, which can reduce build time and maintenance compared with building two separate native apps."
+          },
+          {
+            "q": "Do you work with clients in Saudi Arabia, the UAE and the Gulf?",
+            "a": "Yes. We work remotely, in English and Arabic, and plan calls around your time zone, whether you are in Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain, Oman or elsewhere. Every project follows the same written proposal, milestones and ownership terms."
           }
         ]
       },
@@ -370,8 +399,12 @@
             "a": "Yes. We help with performance, search visibility and new features, guided by how real users use your product."
           },
           {
-            "q": "Will you train my team?",
-            "a": "Yes. We provide guides and a walkthrough so your team can manage content and day-to-day tasks with confidence."
+            "q": "How do I report an issue or request a change after launch?",
+            "a": "Message us in the shared channel or by email. We confirm your request, estimate the effort if needed, and reply within one business day."
+          },
+          {
+            "q": "Can you build an AI chatbot for my business?",
+            "a": "Yes. Chatbots and assistants are part of our AI & Automation service, and they can work in English, Arabic or both. Our AI Booking Assistant concept, for example, is designed to answer questions and book appointments in Egyptian Arabic."
           }
         ]
       }
@@ -381,5 +414,1043 @@
       "text": "Tell us about your project and we’ll reply with clear answers and next steps.",
       "cta": "Contact us"
     }
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s talk about your project",
+    "text": "Share a few details or book a free call. We reply within one business day.",
+    "tabsLabel": "Choose how to get in touch",
+    "metaTitle": "Contact | Berox",
+    "metaDescription": "Share a few details about your project or book a free call with Berox. We reply within one business day.",
+    "whatsapp": {
+      "greeting": "Hello Berox team,",
+      "closing": "Thank you, I look forward to your reply.",
+      "regards": "Best regards,",
+      "labels": {
+        "source": "Heard about Berox from",
+        "method": "Preferred contact method"
+      },
+      "modes": {
+        "message": {
+          "title": "New project inquiry from the Berox website",
+          "lead": "I would like to discuss a new project with you. Here are my details:"
+        },
+        "call": {
+          "title": "New free call booking from the Berox website",
+          "lead": "I would like to book a free call. Here are my preferences:"
+        }
+      }
+    },
+    "modes": [
+      {
+        "id": "message",
+        "label": "Send a message",
+        "icon": "message",
+        "form": {
+          "title": "Tell us about your project",
+          "subject": "New project inquiry",
+          "intro": "New project inquiry from the Berox website",
+          "submit": "Send message",
+          "note": "We use your details only to reply to your inquiry.",
+          "fields": [
+            {
+              "name": "fullName",
+              "type": "text",
+              "label": "Full name",
+              "placeholder": "Your full name",
+              "required": true,
+              "autoComplete": "name"
+            },
+            {
+              "name": "company",
+              "type": "text",
+              "label": "Company or brand name",
+              "placeholder": "Your company or brand",
+              "required": true,
+              "autoComplete": "organization"
+            },
+            {
+              "name": "phone",
+              "type": "tel",
+              "label": "Phone number",
+              "placeholder": "+20 100 000 0000",
+              "required": true,
+              "autoComplete": "tel"
+            },
+            {
+              "name": "email",
+              "type": "email",
+              "label": "Email",
+              "placeholder": "name@company.com",
+              "autoComplete": "email"
+            },
+            {
+              "name": "projectType",
+              "type": "chips",
+              "label": "Project type",
+              "required": true,
+              "span": 2,
+              "options": [
+                {
+                  "id": "website",
+                  "label": "Website"
+                },
+                {
+                  "id": "ecommerce",
+                  "label": "E-commerce store"
+                },
+                {
+                  "id": "mobile",
+                  "label": "Mobile app"
+                },
+                {
+                  "id": "saas",
+                  "label": "Web app or SaaS"
+                },
+                {
+                  "id": "design",
+                  "label": "Design and branding"
+                },
+                {
+                  "id": "other",
+                  "label": "Other"
+                }
+              ]
+            },
+            {
+              "name": "budget",
+              "type": "chips",
+              "label": "Budget",
+              "required": true,
+              "span": 2,
+              "options": [
+                {
+                  "id": "under500",
+                  "label": "Under $500"
+                },
+                {
+                  "id": "500to1k",
+                  "label": "$500 to $1,000"
+                },
+                {
+                  "id": "1kto3k",
+                  "label": "$1,000 to $3,000"
+                },
+                {
+                  "id": "3kto5k",
+                  "label": "$3,000 to $5,000"
+                },
+                {
+                  "id": "5kplus",
+                  "label": "$5,000+"
+                },
+                {
+                  "id": "skip",
+                  "label": "Prefer not to say"
+                },
+                {
+                  "id": "unsure",
+                  "label": "Not sure yet"
+                }
+              ]
+            },
+            {
+              "name": "source",
+              "type": "select",
+              "label": "How did you hear about us?",
+              "placeholder": "Select an option",
+              "span": 2,
+              "options": [
+                {
+                  "id": "google",
+                  "label": "Google search"
+                },
+                {
+                  "id": "instagram",
+                  "label": "Instagram"
+                },
+                {
+                  "id": "facebook",
+                  "label": "Facebook"
+                },
+                {
+                  "id": "linkedin",
+                  "label": "LinkedIn"
+                },
+                {
+                  "id": "referral",
+                  "label": "Friend or client referral"
+                },
+                {
+                  "id": "other",
+                  "label": "Other"
+                }
+              ]
+            },
+            {
+              "name": "details",
+              "type": "textarea",
+              "label": "Project details",
+              "placeholder": "Tell us about your goals, the features you need, and your ideal timeline.",
+              "span": 2,
+              "rows": 5,
+              "maxLength": 1500
+            }
+          ]
+        }
+      },
+      {
+        "id": "call",
+        "label": "Book a free call",
+        "icon": "calendar",
+        "form": {
+          "title": "Pick a time that suits you",
+          "subject": "New call booking",
+          "intro": "New free call booking from the Berox website",
+          "submit": "Confirm booking",
+          "note": "Times are in Egypt time (Cairo). We confirm your slot by message.",
+          "fields": [
+            {
+              "name": "fullName",
+              "type": "text",
+              "label": "Full name",
+              "placeholder": "Your full name",
+              "required": true,
+              "autoComplete": "name"
+            },
+            {
+              "name": "phone",
+              "type": "tel",
+              "label": "Phone number",
+              "placeholder": "+20 100 000 0000",
+              "required": true,
+              "autoComplete": "tel"
+            },
+            {
+              "name": "method",
+              "type": "chips",
+              "variant": "cards",
+              "label": "How should we call you?",
+              "required": true,
+              "span": 2,
+              "defaultValue": "whatsapp",
+              "options": [
+                {
+                  "id": "whatsapp",
+                  "label": "WhatsApp",
+                  "hint": "Voice or video call",
+                  "icon": "whatsapp"
+                },
+                {
+                  "id": "phone",
+                  "label": "Phone call",
+                  "hint": "About 15 minutes",
+                  "icon": "phone"
+                },
+                {
+                  "id": "video",
+                  "label": "Online meeting",
+                  "hint": "Google Meet or Zoom",
+                  "icon": "video"
+                }
+              ]
+            },
+            {
+              "name": "day",
+              "type": "chips",
+              "label": "Preferred day",
+              "required": true,
+              "span": 2,
+              "options": [
+                {
+                  "id": "sat",
+                  "label": "Saturday"
+                },
+                {
+                  "id": "sun",
+                  "label": "Sunday"
+                },
+                {
+                  "id": "mon",
+                  "label": "Monday"
+                },
+                {
+                  "id": "tue",
+                  "label": "Tuesday"
+                },
+                {
+                  "id": "wed",
+                  "label": "Wednesday"
+                },
+                {
+                  "id": "thu",
+                  "label": "Thursday"
+                },
+                {
+                  "id": "fri",
+                  "label": "Friday"
+                }
+              ]
+            },
+            {
+              "name": "time",
+              "type": "time",
+              "label": "Preferred time",
+              "required": true,
+              "hint": "Choose any time that suits you."
+            }
+          ]
+        }
+      }
+    ],
+    "ui": {
+      "optional": "Optional",
+      "requiredNote": "Fields marked * are required.",
+      "sending": "Sending…",
+      "errors": {
+        "required": "This field is required.",
+        "phone": "Enter a valid phone number.",
+        "email": "Enter a valid email address.",
+        "send": "Something went wrong. Please try again or contact us by email."
+      },
+      "success": {
+        "again": "Send another",
+        "whatsapp": {
+          "title": "Your message is ready",
+          "text": "WhatsApp opened with your details filled in. Press send there to finish."
+        },
+        "email": {
+          "title": "Your email is ready",
+          "text": "Your email app opened with your details filled in. Press send there to finish."
+        },
+        "api": {
+          "title": "Thank you, we got it",
+          "text": "We will reply within one business day with clear next steps."
+        }
+      },
+      "assurances": [
+        "Reply within one business day",
+        "Free, no-obligation consultation",
+        "Your details stay private"
+      ]
+    }
+  },
+  "Work": {
+    "eyebrow": "Our work",
+    "title": "Our work so far",
+    "text": "We would rather show you real work than fill this space with made-up logos. Here are live projects, with more on the way.",
+    "cta": "Be one of our clients",
+    "placeholders": [
+      { "status": "progress", "label": "In progress" },
+      { "status": "soon", "label": "Coming soon" }
+    ],
+    "page": {
+      "metaTitle": "Software Projects and Case Studies | Berox",
+      "metaDescription": "Browse the websites, web apps and mobile apps Berox has built, with case studies, live demos and the technology behind each project.",
+      "eyebrow": "Portfolio",
+      "title": "Work we are proud to show",
+      "text": "Real projects with live demos and honest case studies. New work is added here as we finish it.",
+      "ctaTitle": "Have a project in mind?",
+      "ctaText": "Tell us what you want to build and we will plan it together.",
+      "ctaButton": "Start your project"
+    },
+    "ui": {
+      "back": "All work",
+      "viewAll": "View all work",
+      "filterAll": "All",
+      "filterLabel": "Filter projects",
+      "live": "Live demo",
+      "code": "View code",
+      "caseStudy": "Case study",
+      "services": "Services",
+      "team": "Team",
+      "timeline": "Timeline",
+      "year": "Year",
+      "overview": "Overview",
+      "challenge": "The challenge",
+      "solution": "Our approach",
+      "featuresEyebrow": "What we built",
+      "videoEyebrow": "In action",
+      "galleryEyebrow": "Gallery",
+      "stackEyebrow": "Built with",
+      "noteLabel": "Good to know",
+      "ctaTitle": "Have a store in mind?",
+      "ctaText": "Tell us what you want to sell and we will plan the build together.",
+      "ctaButton": "Start your project"
+    },
+    "projects": [
+      {
+        "slug": "bazaro",
+        "name": "Bazaro",
+        "badge": "In-house project",
+        "category": "E-commerce",
+        "summary": "A full-featured e-commerce storefront built for everyday essentials.",
+        "cta": "Read the case study",
+        "imageAlt": "Bazaro home page on desktop and mobile",
+        "tags": ["Next.js", "React 19", "TypeScript", "Tailwind CSS"],
+        "services": "Web design, web development, e-commerce",
+        "team": "Berox team",
+        "timeline": "2 weeks",
+        "year": "2026",
+        "overview": "Bazaro is an e-commerce storefront we built to show what a complete shopping experience looks like from start to finish: browsing, cart, accounts and checkout. It is an in-house project by the Berox team, made as a working reference for what we deliver.",
+        "challenge": "Shoppers leave when buying feels slow or when they are asked to create an account too early. We wanted a store where anyone can start shopping immediately and an account is only requested when it matters.",
+        "solution": "A guest cart and wishlist that live in the browser and merge into the account after login, a cart that opens as a drawer without leaving the page, and a checkout with saved addresses and two payment options.",
+        "stats": [
+          { "value": "2 weeks", "label": "Build time" },
+          { "value": "10", "label": "Product categories" },
+          { "value": "6", "label": "Core shopping flows" }
+        ],
+        "featuresTitle": "Everything a shopper needs, nothing in the way",
+        "features": [
+          {
+            "title": "A cart that starts with the visitor",
+            "text": "Shoppers add products without an account, and the guest cart merges into their profile after login."
+          },
+          {
+            "title": "Cart drawer and cart page",
+            "text": "A side panel on desktop and a bottom sheet on mobile, plus a full page for editing the order."
+          },
+          {
+            "title": "Filters, sorting and live search",
+            "text": "Filter by category, brand and price, sort results and search products and brands from the navbar."
+          },
+          {
+            "title": "Product pages that sell",
+            "text": "Image gallery, stock status, quantity selector, reviews breakdown and shipping details."
+          },
+          {
+            "title": "Complete accounts",
+            "text": "Sign up, login and password recovery with a six-digit code, plus profile, address book and order history."
+          },
+          {
+            "title": "A clear checkout",
+            "text": "Saved addresses with cash on delivery or card payment."
+          }
+        ],
+        "videoTitle": "The store in use",
+        "videoText": "From adding a product to the cart drawer to the full cart page, in a short walkthrough.",
+        "galleryTitle": "A closer look",
+        "gallery": [
+          { "caption": "Product listing with filters and sorting" },
+          { "caption": "Product details page" },
+          { "caption": "Cart page" },
+          { "caption": "Cart drawer on mobile" }
+        ],
+        "stackTitle": "The stack behind it",
+        "stack": [
+          {
+            "group": "Framework",
+            "items": ["Next.js 16 (App Router)", "React 19", "TypeScript"]
+          },
+          {
+            "group": "Styling and UI",
+            "items": [
+              "Tailwind CSS 4",
+              "shadcn/ui",
+              "Base UI",
+              "embla-carousel"
+            ]
+          },
+          {
+            "group": "Data and auth",
+            "items": ["NextAuth v4", "TanStack Query 5", "Route Ecommerce API"]
+          },
+          {
+            "group": "Forms and hosting",
+            "items": ["Formik", "Zod 4", "Vercel"]
+          }
+        ],
+        "note": "Product data and orders come from the public Route Ecommerce API, so our work went into the storefront itself: the design, the shopping flows and the front-end code."
+      },
+      {
+        "slug": "chatbot",
+        "name": "AI Booking Assistant",
+        "badge": "Concept / Demo",
+        "category": "AI",
+        "summary": "An Egyptian-Arabic AI assistant that answers customer questions and books appointments for clinics, salons and similar businesses.",
+        "cta": "Read the case study",
+        "imageAlt": "Demo clinic website with the AI assistant chat widget on desktop and mobile",
+        "tags": ["LLM API", "Python / Node.js", "React", "Next.js"],
+        "services": "Web development, AI integration",
+        "team": "Berox team",
+        "timeline": "4 to 5 weeks (planned)",
+        "year": "2026",
+        "overview": "This is a concept and demo, not a client project. The AI Booking Assistant is an idea we designed at Berox for clinics, salons and similar businesses: a chat assistant that talks in Egyptian Arabic, answers customer questions and books appointments. The screens on this page are designed mockups with sample data, not a live product.",
+        "challenge": "Small businesses lose bookings when nobody picks up the phone or answers messages after hours. Customers also write in Egyptian Arabic and in Franco-Arabic, which many chatbots handle poorly.",
+        "solution": "An assistant designed to understand how customers actually write, answer questions about prices and hours, and book, change or cancel appointments inside the chat. When it is not sure, it hands the conversation to a staff member, and a simple dashboard lets the business review chats and edit prices and hours.",
+        "stats": [
+          {
+            "value": "4 to 5 weeks",
+            "label": "Planned build time (estimate)"
+          },
+          {
+            "value": "2",
+            "label": "Writing styles it is designed to understand"
+          },
+          {
+            "value": "3",
+            "label": "Dashboard screens designed"
+          }
+        ],
+        "featuresTitle": "What it is designed to do",
+        "features": [
+          {
+            "title": "Egyptian Arabic and Franco-Arabic",
+            "text": "Designed to understand how customers really write, in Egyptian Arabic and in Arabic typed with Latin letters."
+          },
+          {
+            "title": "Bookings without a phone call",
+            "text": "Designed to book, change and cancel appointments inside the chat itself."
+          },
+          {
+            "title": "Hand-off to a human",
+            "text": "Designed to pass the conversation to a staff member when it is not sure of the answer."
+          },
+          {
+            "title": "Quick-reply buttons",
+            "text": "Buttons for common choices such as prices, booking and talking to staff, so customers can answer with one tap."
+          },
+          {
+            "title": "A simple dashboard",
+            "text": "Designed so the business can review chats, see every booking with its status, and edit prices and hours."
+          },
+          {
+            "title": "A knowledge base it answers from",
+            "text": "The demo dashboard includes services and prices, common questions and working hours that the assistant is designed to answer from."
+          }
+        ],
+        "videoTitle": "The conversation in action",
+        "videoText": "A scripted 15-second chat showing a price question and a booking. It is a demo recording with sample data, not a live system.",
+        "galleryTitle": "A closer look",
+        "gallery": [
+          {
+            "caption": "Dashboard: conversations (sample data)"
+          },
+          {
+            "caption": "Dashboard: bookings and their status (sample data)"
+          },
+          {
+            "caption": "Dashboard: services, prices, questions and hours (sample data)"
+          },
+          {
+            "caption": "Greeting and a price question (sample data)"
+          },
+          {
+            "caption": "Choosing a day and time (sample data)"
+          },
+          {
+            "caption": "Booking confirmed (sample data)"
+          }
+        ],
+        "stackTitle": "The planned stack",
+        "stack": [
+          {
+            "group": "Back end",
+            "items": ["Python (FastAPI) or Node.js", "LLM via API"]
+          },
+          {
+            "group": "Data",
+            "items": ["SQLite", "PostgreSQL (later)"]
+          },
+          {
+            "group": "Chat widget and dashboard",
+            "items": [
+              "JavaScript / React widget with RTL support",
+              "Next.js admin dashboard"
+            ]
+          },
+          {
+            "group": "Hosting and channels",
+            "items": ["Small cloud server", "WhatsApp Cloud API (later)"]
+          }
+        ],
+        "note": "This stack is a plan and may change. Nothing here is built or deployed yet, and every screen uses sample data. We will replace the mockups with real captures once the assistant is built.",
+        "ctaTitle": "Need a booking assistant?",
+        "ctaText": "Tell us about your business and we will plan one together."
+      },
+      {
+        "slug": "krakebak",
+        "name": "Krakebak",
+        "badge": "Client product",
+        "category": "SaaS platform",
+        "summary": "A mobile app and a web dashboard that organize waste collection from homes, shops and centers: requests, couriers, regions, contracts and sales in one place.",
+        "cta": "Read the case study",
+        "imageAlt": "Krakebak admin dashboard on desktop with the mobile view on top",
+        "tags": ["Next.js", "React", "Flutter", "Node.js"],
+        "services": "Web development, mobile app, SaaS",
+        "team": "Berox team",
+        "timeline": "3 weeks",
+        "year": "2026",
+        "overview": "Krakebak is a client product for collecting waste materials from homes, shops and centers. Berox built it as a mobile app and a web admin dashboard in three weeks. The dashboard gives the operations team one place to manage supply requests, couriers, regions, contracts and sales.",
+        "challenge": "Collecting waste from homes, shops and centers means coordinating many requests, couriers and service areas at the same time. Each request has to reach the right courier, in the right region, and be followed until it is picked up and paid for.",
+        "solution": "A web dashboard in Arabic, with a right-to-left layout and dark and light themes. It tracks every supply request by status, ties couriers and requests to service regions on a map, manages courier contracts and wages, and records every change in an operations log. Suppliers, customers, sales representatives and sales orders live in the same place, and permissions are set by role so each person sees only what they need.",
+        "stats": [
+          {
+            "value": "50",
+            "label": "Collection requests per week"
+          },
+          {
+            "value": "50 to 100",
+            "label": "Users"
+          },
+          {
+            "value": "3 weeks",
+            "label": "Build time"
+          }
+        ],
+        "featuresTitle": "What the platform does",
+        "features": [
+          {
+            "title": "Supply request tracking",
+            "text": "Every request is followed by status, such as pending assignment, scheduled today, failed pickup and payment due, with quick indicators on the home screen."
+          },
+          {
+            "title": "Couriers and join requests",
+            "text": "Manage the courier team, review join requests and keep track of ratings."
+          },
+          {
+            "title": "Regions on a map",
+            "text": "Service regions are drawn on a map and linked to couriers and requests, and requests outside coverage are flagged for review."
+          },
+          {
+            "title": "Waste catalog",
+            "text": "A catalog of the waste types available in supply requests. Disabling a type hides it from new requests only."
+          },
+          {
+            "title": "Contracts, wages and expiry alerts",
+            "text": "Courier contracts with their value and dates, wage statements, and alerts for contracts and papers that are about to expire."
+          },
+          {
+            "title": "Roles and an operations log",
+            "text": "Permissions by role, and a read-only log of who did what and when."
+          }
+        ],
+        "videoTitle": "The dashboard in action",
+        "videoText": "A 30-second walkthrough of the admin dashboard on desktop.",
+        "galleryTitle": "A closer look",
+        "gallery": [
+          {
+            "caption": "Courier contracts: values, dates and status"
+          },
+          {
+            "caption": "Expiry alerts for contracts and papers"
+          },
+          {
+            "caption": "Operations log: who changed what, and when"
+          },
+          {
+            "caption": "Home with quick indicators on mobile"
+          },
+          {
+            "caption": "Waste catalog on mobile"
+          },
+          {
+            "caption": "Navigation menu on mobile"
+          }
+        ],
+        "stackTitle": "The technology behind it",
+        "stack": [
+          {
+            "group": "Front end",
+            "items": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+          },
+          {
+            "group": "Mobile",
+            "items": ["Flutter"]
+          },
+          {
+            "group": "Back end",
+            "items": ["Node.js"]
+          },
+          {
+            "group": "Hosting",
+            "items": ["Vercel"]
+          }
+        ],
+        "note": "This is a client product, so the client's name is not shown.",
+        "ctaTitle": "Need a platform for your operations?",
+        "ctaText": "Tell us how your work runs today and we will plan the app and dashboard together."
+      },
+      {
+        "slug": "b-food",
+        "name": "B-food",
+        "badge": "Concept / Demo",
+        "category": "SaaS platform",
+        "summary": "Scan, order, serve. One system from the customer's phone to the kitchen: customers scan a QR code and order, and the kitchen, bar and owner each get their own screen.",
+        "cta": "Read the case study",
+        "demoButton": "Request a demo",
+        "imageAlt": "B-food concept design: the restaurant dashboard on desktop and the QR menu on a phone",
+        "tags": ["Next.js", "NestJS", "PostgreSQL", "Redis"],
+        "services": "Web development, UI design",
+        "team": "Berox team",
+        "timeline": "3 weeks (planned estimate)",
+        "year": "2026",
+        "overview": "B-food is a design concept, not a delivered product. Customers scan a QR code at the table, browse an Arabic menu and send their order. The kitchen and bar see it instantly on their own screens, and the owner manages the menu, tables, stock, staff and reports from one dashboard. Development has not started, and every screen uses sample data.",
+        "challenge": "Many restaurants and cafes run orders, the kitchen, stock and staff on separate tools, or on paper. Orders get lost between the table and the kitchen, customers wait without knowing what is happening, and the owner sees the numbers late.",
+        "solution": "One system designed around the whole flow: a table-specific QR menu in Arabic for the customer, live screens for the kitchen and bar, and a single dashboard where the owner manages the menu, tables, recipe-based stock, staff and reports. It is designed to serve several branches from the same system.",
+        "stats": [],
+        "featuresTitle": "What it is designed to do",
+        "features": [
+          {
+            "title": "Table-specific QR menu",
+            "text": "Each table has its own QR code that opens an Arabic-first, right-to-left menu on the customer's phone."
+          },
+          {
+            "title": "Live order tracking",
+            "text": "Designed so the customer can follow their order from received to being prepared to ready."
+          },
+          {
+            "title": "Kitchen and bar screens",
+            "text": "Designed to send each order to the right display, so the kitchen and the bar see only what they prepare."
+          },
+          {
+            "title": "Menu, tables and QR codes",
+            "text": "Designed so the owner can edit the menu and prices, manage tables and print the QR code for each table."
+          },
+          {
+            "title": "Stock based on recipes",
+            "text": "Designed to link each item to its ingredients, so stock goes down automatically with every sale."
+          },
+          {
+            "title": "Staff, payroll and audit logs",
+            "text": "Designed to manage staff and payroll, and to keep a log of who changed what."
+          },
+          {
+            "title": "Multi-branch",
+            "text": "Designed to run several locations from one system."
+          }
+        ],
+        "videoTitle": "The customer's side in action",
+        "videoText": "A scripted 13-second recording: the customer adds drinks, sends the order and tracks it. It is a concept demo with sample data, not a live system.",
+        "galleryTitle": "A closer look",
+        "gallery": [
+          {
+            "caption": "Concept design: dashboard overview (sample data)"
+          },
+          {
+            "caption": "Concept design: menu management (sample data)"
+          },
+          {
+            "caption": "Concept design: kitchen and bar display (sample data)"
+          },
+          {
+            "caption": "Concept design: tables and QR codes (sample data)"
+          },
+          {
+            "caption": "Concept design: customer menu (sample data)"
+          },
+          {
+            "caption": "Concept design: cart (sample data)"
+          },
+          {
+            "caption": "Concept design: order tracking (sample data)"
+          }
+        ],
+        "stackTitle": "The planned stack",
+        "stack": [
+          {
+            "group": "Back end",
+            "items": ["TypeScript", "NestJS"]
+          },
+          {
+            "group": "Data",
+            "items": ["PostgreSQL", "Redis"]
+          },
+          {
+            "group": "Front end",
+            "items": ["Next.js", "Tailwind CSS with right-to-left support"]
+          }
+        ],
+        "note": "Design concept with sample data. Built to order for your venue. The stack is a plan and may change.",
+        "ctaTitle": "Run a restaurant or cafe?",
+        "ctaText": "Tell us how your venue works and we will plan the system together."
+      },
+      {
+        "slug": "stays",
+        "name": "Stays",
+        "badge": "Concept / Demo",
+        "category": "SaaS platform",
+        "summary": "List your property, get booking requests, manage your calendar. Guests search by destination and dates, hosts manage listings and reservations, and the platform team reviews each listing.",
+        "cta": "Read the case study",
+        "demoButton": "Request a demo",
+        "imageAlt": "Stays concept design: the listings search on desktop and the search results on a phone",
+        "tags": ["Next.js", "NestJS", "PostgreSQL", "Tailwind CSS"],
+        "services": "Web development, UI design",
+        "team": "Berox team",
+        "timeline": "2 weeks (planned estimate)",
+        "year": "2026",
+        "overview": "Stays is a design concept, not a delivered product, and the name is a working name. Guests search by destination, dates and number of guests and send a booking request. Hosts manage their listings, a calendar and reservations, and the platform team reviews each listing before it goes live. Development has not started, every screen uses sample data, and the listing photos are stock images.",
+        "challenge": "Small hosts often manage bookings through scattered messages and notes, and guests cannot see the full price before they ask. Platforms also need a way to check that listings are real before showing them.",
+        "solution": "A platform designed around three sides: guests who search and send a booking request with the price breakdown shown up front, hosts who accept or decline requests from their calendar, and a platform team that reviews listings before they are published. It is designed Arabic-first, right-to-left and mobile-first. Payments are not part of the concept shown here.",
+        "stats": [],
+        "featuresTitle": "What it is designed to do",
+        "features": [
+          {
+            "title": "Search by destination, dates and guests",
+            "text": "Designed so guests can find a place by where, when and how many people."
+          },
+          {
+            "title": "Listing page with price breakdown",
+            "text": "Designed to show the nightly price, cleaning fee and service fee before the guest sends a request."
+          },
+          {
+            "title": "Host calendar and booking requests",
+            "text": "Designed so hosts can see their calendar and accept or decline booking requests."
+          },
+          {
+            "title": "Listing review by the platform team",
+            "text": "Designed so the platform team reviews and approves each listing before it is published."
+          },
+          {
+            "title": "Arabic-first and mobile-first",
+            "text": "Designed right-to-left from the start, beginning with the phone screen."
+          }
+        ],
+        "videoTitle": "Booking a stay in action",
+        "videoText": "A scripted 11-second recording: pick a listing, review the price and send a booking request. It is a concept demo with sample data, not a live system.",
+        "galleryTitle": "A closer look",
+        "gallery": [
+          {
+            "caption": "Concept design: search and listings (sample data)"
+          },
+          {
+            "caption": "Concept design: listing details and booking card (sample data)"
+          },
+          {
+            "caption": "Concept design: host reservations and calendar (sample data)"
+          },
+          {
+            "caption": "Concept design: platform admin, listing review (sample data)"
+          },
+          {
+            "caption": "Concept design: search results (sample data)"
+          },
+          {
+            "caption": "Concept design: listing details (sample data)"
+          },
+          {
+            "caption": "Concept design: booking request review (sample data)"
+          }
+        ],
+        "stackTitle": "The planned stack",
+        "stack": [
+          {
+            "group": "Back end",
+            "items": ["TypeScript", "NestJS"]
+          },
+          {
+            "group": "Data",
+            "items": [
+              "PostgreSQL for listings, calendars and bookings",
+              "S3-compatible storage for listing photos"
+            ]
+          },
+          {
+            "group": "Front end",
+            "items": ["Next.js", "Tailwind CSS with right-to-left support"]
+          }
+        ],
+        "note": "Design concept with sample data. Built to order for your business. The name is a working name and the stack is a plan that may change.",
+        "ctaTitle": "Have a booking platform in mind?",
+        "ctaText": "Tell us how your rentals or bookings work and we will plan the platform together."
+      }
+    ]
+  },
+  "Loading": {
+    "label": "Loading"
+  },
+  "NotFound": {
+    "code": "404",
+    "eyebrow": "Page not found",
+    "title": "This page took a wrong turn",
+    "text": "The page you are looking for does not exist or has moved. Let us get you back on track.",
+    "home": "Back to home",
+    "contact": "Contact us"
+  },
+  "Privacy": {
+    "metaTitle": "Privacy policy | Berox",
+    "metaDescription": "How the Berox website collects, uses and protects your personal information.",
+    "eyebrow": "Legal",
+    "title": "Privacy policy",
+    "intro": "This policy explains what personal information the Berox website collects, how we use it, and the choices you have. We keep it short and plain on purpose.",
+    "updatedLabel": "Last updated",
+    "updated": "November 8, 2026",
+    "tocLabel": "On this page",
+    "back": "Back to home",
+    "contactTitle": "Contact us",
+    "contactText": "Questions about this policy or your information? Reach us at:",
+    "sections": [
+      {
+        "id": "who",
+        "title": "Who we are",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Berox is a software agency based in Egypt. We design and build websites, web apps and mobile apps for clients around the world."
+          },
+          {
+            "type": "p",
+            "text": "In this policy, “we”, “us” and “Berox” mean the team behind this website."
+          }
+        ]
+      },
+      {
+        "id": "collect",
+        "title": "What we collect",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We only collect what you choose to send us through the contact form:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Your full name, company or brand name and phone number",
+              "Your email address, if you give it",
+              "Your project type, budget range and how you heard about us",
+              "Your project details, or your preferred contact method, day and time if you book a call"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "We do not ask for payment details, passwords or sensitive personal information. Please do not include them in your message."
+          }
+        ]
+      },
+      {
+        "id": "delivery",
+        "title": "How your message reaches us",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This website does not keep a database of form submissions. When you submit the form, your device opens WhatsApp or your email app with your message already written. Nothing is sent until you press send there."
+          },
+          {
+            "type": "p",
+            "text": "From that point, WhatsApp or your email provider handles the message under its own privacy policy."
+          }
+        ]
+      },
+      {
+        "id": "use",
+        "title": "How we use your information",
+        "blocks": [
+          {
+            "type": "list",
+            "items": [
+              "To reply to your inquiry and arrange a call",
+              "To prepare a quote, scope and timeline for your project",
+              "To keep a record of our conversation while we work together"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "We do not sell or rent your information, and we do not send marketing messages unless you ask for them."
+          }
+        ]
+      },
+      {
+        "id": "cookies",
+        "title": "Cookies and local storage",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This website does not use advertising, tracking or analytics cookies."
+          },
+          {
+            "type": "p",
+            "text": "It stores two small settings in your browser so the site works the way you expect:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Your language choice, kept in a cookie",
+              "Your light or dark theme, kept in your browser’s local storage"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "These settings are not used to identify you, and you can clear them at any time in your browser settings."
+          }
+        ]
+      },
+      {
+        "id": "sharing",
+        "title": "Who we share information with",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We share your information only with the services needed to run our business and answer you, such as WhatsApp, our email provider and our website hosting provider. We may also share it if the law requires us to."
+          },
+          {
+            "type": "p",
+            "text": "Our hosting provider may keep standard server logs, such as IP address and browser type, to deliver and secure the website."
+          }
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "How long we keep it",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We keep your inquiry for as long as needed to respond and, if we work together, for the length of the project and any support. You can ask us to delete it at any time, unless the law requires us to keep it."
+          }
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Your rights",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "You can ask us to:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Tell you what information we hold about you",
+              "Correct anything that is wrong",
+              "Delete your information",
+              "Stop using your information for a particular purpose"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "To make a request, contact us using the details below. We will reply within a reasonable time."
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Security",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We take reasonable steps to protect your information, including using encrypted connections on this website. No method of sending data over the internet is completely secure, so we cannot guarantee absolute security."
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "title": "Children",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This website is meant for businesses and adults. We do not knowingly collect information from children."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "Changes to this policy",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We may update this policy from time to time. The date at the top shows when it last changed. If we make a major change, we will say so on this page."
+          }
+        ]
+      }
+    ]
   }
 }

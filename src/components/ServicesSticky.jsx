@@ -33,31 +33,10 @@ export default function ServicesSticky({
 }) {
   const rootRef = useRef(null);
   const listRef = useRef(null);
-  const railRef = useRef(null);
 
   useGSAP(
     function () {
       const wide = window.matchMedia("(min-width: 1024px)");
-
-      function update() {
-        const cards = listRef.current.querySelectorAll("[data-card]");
-        const rail = railRef.current.querySelectorAll("[data-rail]");
-        let active = 0;
-
-        if (wide.matches) {
-          for (let i = 0; i < cards.length; i++) {
-            const stick = parseFloat(getComputedStyle(cards[i]).top);
-
-            if (cards[i].getBoundingClientRect().top <= stick + 2) {
-              active = i;
-            }
-          }
-        }
-
-        for (let i = 0; i < rail.length; i++) {
-          rail[i].setAttribute("data-active", i === active ? "true" : "false");
-        }
-      }
 
       function layout() {
         const list = listRef.current;
@@ -100,12 +79,9 @@ export default function ServicesSticky({
         trigger: listRef.current,
         start: "top bottom",
         end: "bottom top",
-        onUpdate: update,
-        onRefresh: update,
       });
 
       layout();
-      update();
 
       return function () {
         ScrollTrigger.removeEventListener("refreshInit", layout);
@@ -114,7 +90,6 @@ export default function ServicesSticky({
     { scope: rootRef },
   );
 
-  const railItems = [];
   const cards = [];
 
   for (let i = 0; i < items.length; i++) {
@@ -129,21 +104,6 @@ export default function ServicesSticky({
         </li>,
       );
     }
-
-    railItems.push(
-      <li
-        key={item.title}
-        data-rail
-        data-active={i === 0 ? "true" : "false"}
-        className="group flex items-center gap-4 py-2 [@media(max-height:820px)]:py-1 [@media(max-height:700px)]:py-0 text-muted transition-colors duration-500 data-[active=true]:text-content"
-      >
-        <span className="h-px w-6 bg-line transition-[width,background-color] duration-500 group-data-[active=true]:w-12 group-data-[active=true]:bg-primary"></span>
-        <span className="text-xs font-medium tabular-nums">
-          {"0" + (i + 1)}
-        </span>
-        <span className="text-sm font-medium">{item.title}</span>
-      </li>,
-    );
 
     cards.push(
       <li
@@ -211,13 +171,6 @@ export default function ServicesSticky({
               </MagneticButton>
             </div>
           </SectionHeading>
-          <ol
-            ref={railRef}
-            aria-hidden="true"
-            className="mt-12 hidden border-t border-line pt-6 lg:block [@media(max-height:820px)]:mt-8 [@media(max-height:820px)]:pt-4 [@media(max-height:700px)]:mt-5 [@media(max-height:700px)]:pt-3"
-          >
-            {railItems}
-          </ol>
         </div>
 
         <ol ref={listRef} className="group/list">

@@ -37,7 +37,7 @@ export default function manifest() {
       {
         name: "Get a free call",
         short_name: "Free call",
-        url: "/#contact",
+        url: "/contact",
         icons: [
           { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
         ],
