@@ -24,7 +24,7 @@ export const siteConfig = {
   name: "Berox",
   url: url,
   indexable: process.env.ALLOW_INDEXING === "true" && url !== PLACEHOLDER_URL,
-  lastModified: new Date("2026-11-21"),
+  lastModified: new Date("2026-11-25"),
   email: "beroxagency@gmail.com",
   phone: "+20 101 805 2927",
   whatsapp: "201018052927",
@@ -33,7 +33,7 @@ export const siteConfig = {
     { name: "Ahmed Alhossiny", role: "Founder & CEO" },
     { name: "Hesham Elshamy", role: "Co-Founder" },
   ],
-  socials: [
+    socials: [
     {
       name: "Instagram",
       icon: "instagram",
@@ -43,6 +43,11 @@ export const siteConfig = {
       name: "Facebook",
       icon: "facebook",
       href: "https://www.facebook.com/beroxagency",
+    },
+    {
+      name: "TikTok",
+      icon: "tiktok",
+      href: "https://www.tiktok.com/@beroxagency",
     },
   ],
   profiles: [],
