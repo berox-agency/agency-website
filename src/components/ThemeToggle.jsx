@@ -64,6 +64,11 @@ export default function ThemeToggle() {
     root.classList.add("theme-transition");
     root.setAttribute("data-theme", next);
 
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute("content", next === "light" ? "#F3F8F5" : "#08130F");
+    }
+
     try {
       localStorage.setItem("theme", next);
     } catch (error) {}

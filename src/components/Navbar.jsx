@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
+import { gsap, useGSAP } from "@/lib/gsap";
 import Logo from "@/components/Logo";
 import SlotLink from "@/components/SlotLink";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -23,7 +23,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const navRef = useRef(null);
-  const bgRef = useRef(null);
+  const barBgRef = useRef(null);
   const overlayRef = useRef(null);
   const servicesRef = useRef(null);
   const triggerRef = useRef(null);
@@ -33,12 +33,6 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
 
   const { contextSafe } = useGSAP(
     function () {
-      const trigger = ScrollTrigger.create({
-        start: 24,
-        end: "max",
-        toggleClass: { targets: bgRef.current, className: "is-scrolled" },
-      });
-
       if (panelRef.current) {
         gsap.set(panelRef.current, {
           y: 10,
@@ -60,7 +54,6 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
       });
 
       return function () {
-        trigger.kill();
         mm.revert();
       };
     },
@@ -258,6 +251,29 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
     };
   }, []);
 
+  useEffect(function () {
+    const bar = barBgRef.current;
+
+    if (!bar) {
+      return undefined;
+    }
+
+    function onScroll() {
+      const scrolled = window.scrollY > 8 ? "true" : "false";
+
+      if (bar.dataset.scrolled !== scrolled) {
+        bar.dataset.scrolled = scrolled;
+      }
+    }
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return function () {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   function closeMenu() {
     setOpen(false);
   }
@@ -317,7 +333,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
         <div
           key={link.label}
           ref={servicesRef}
-          className="flex h-20 items-center"
+          className="flex h-20 items-center gap-0.5"
           onPointerEnter={function (event) {
             if (event.pointerType === "mouse") {
               openServices();
@@ -335,34 +351,38 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
           }}
         >
           <SlotLink
-            as="button"
-            type="button"
+            href={link.href}
             triggerRef={triggerRef}
             active={servicesOpen}
-            aria-haspopup="true"
-            aria-expanded={servicesOpen}
-            aria-controls="services-menu"
-            onClick={openServices}
-            trailing={
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-                className={
-                  "h-3.5 w-3.5 transition-transform duration-300 " +
-                  (servicesOpen ? "rotate-180" : "")
-                }
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            }
+            onClick={closeServices}
           >
             {link.label}
           </SlotLink>
+          <button
+            type="button"
+            aria-label={link.label}
+            aria-haspopup="true"
+            aria-expanded={servicesOpen}
+            aria-controls="services-menu"
+            onClick={servicesOpen ? closeServices : openServices}
+            className="grid h-8 w-6 cursor-pointer place-items-center text-content/80 transition-colors hover:text-content focus-visible:text-content focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className={
+                "h-3.5 w-3.5 transition-transform duration-300 " +
+                (servicesOpen ? "rotate-180" : "")
+              }
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
 
           <div className="pointer-events-none absolute left-1/2 top-full w-184 max-w-[calc(100vw-3rem)] -translate-x-1/2">
             <div
@@ -404,9 +424,11 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
     <>
       <header ref={navRef} className="motion-hide fixed inset-x-0 top-0 z-50">
         <div
-          ref={bgRef}
+          ref={barBgRef}
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 border-b border-transparent transition-[background-color,border-color,backdrop-filter] duration-300 [&.is-scrolled]:border-line [&.is-scrolled]:bg-canvas/70 [&.is-scrolled]:backdrop-blur-xl"
+          data-scrolled="false"
+          data-menu={open ? "open" : "closed"}
+          className="pointer-events-none absolute inset-0 border-b border-transparent bg-transparent transition-[background-color,border-color,backdrop-filter] duration-300 data-[menu=closed]:data-[scrolled=true]:border-line data-[menu=closed]:data-[scrolled=true]:bg-canvas/70 data-[menu=closed]:data-[scrolled=true]:backdrop-blur-xl data-[menu=closed]:data-[scrolled=true]:backdrop-saturate-150"
         ></div>
 
         <div className="relative mx-auto flex h-20 max-w-site items-center px-6 md:px-10">
@@ -426,7 +448,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
           <div className="hidden flex-1 items-center justify-end gap-3 lg:flex">
             <ThemeToggle />
             <LanguageSwitcher />
-            <MagneticButton href={cta.href} size="sm">
+            <MagneticButton href={cta.href} size="sm" attention>
               {cta.label}
             </MagneticButton>
           </div>
@@ -477,6 +499,7 @@ export default function Navbar({ links, cta, menuLabel, closeLabel }) {
             <MagneticButton
               href={cta.href}
               onClick={closeMenu}
+              attention
               className="w-full"
             >
               {cta.label}
